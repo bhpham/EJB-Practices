@@ -1,0 +1,37 @@
+package net.mv.ejb.ex1;
+
+import java.util.Properties;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class EJBTestClient {
+
+	public static void main(String[] args) {
+
+
+		// Prop file to store init parameters
+		Properties props = new Properties();
+		
+		props.put(Context.PROVIDER_URL, "t3://localhost:7001");
+		props.put(Context.INITIAL_CONTEXT_FACTORY, "weblogic.jndi.WLInitialContextFactory");
+		
+		Context ctx = null;
+		
+		try {
+			ctx = new InitialContext(props);
+			
+			HelloWorldRemote hwr = (HelloWorldRemote) ctx.lookup("myEjb#net.mv.ejb.ex1.HelloWorldRemote");
+			
+			String result = hwr.helloWorld("Jeff");
+			
+			System.out.println(result);
+			
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

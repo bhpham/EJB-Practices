@@ -1,0 +1,23 @@
+package net.mv.ejb.ex2;
+
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class HelloWorld
+ */
+@Stateless(mappedName = "myEJB")
+public class HelloWorld implements HelloWorldRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public HelloWorld() {
+    }
+
+	@Override
+	public String sayHello(String name) {
+	
+		return "Hello " + name;
+	}
+
+}

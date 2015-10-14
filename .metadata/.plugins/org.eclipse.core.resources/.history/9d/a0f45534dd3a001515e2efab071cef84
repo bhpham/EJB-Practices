@@ -1,0 +1,5 @@
+package net.mv.model;
+
+public class Receipt {
+
+}

@@ -1,0 +1,31 @@
+package net.mv.model;
+
+public class Receipt {
+
+	private int r_id;
+	private Customer customer;
+	
+	public Receipt() {}
+
+	public Receipt(int r_id) {
+		super();
+		this.r_id = r_id;
+	}
+
+	public int getR_id() {
+		return r_id;
+	}
+
+	public void setR_id(int r_id) {
+		this.r_id = r_id;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
+}

@@ -1,0 +1,3 @@
+C\:/Users/Binh\ Pham/week5/MyEJBExampleEAR/EarContent/APP-INF/classes = APP-INF/classes
+C\:/Users/Binh\ Pham/week5/MyEJBExampleClient/build/classes = APP-INF/lib/MyEJBExampleClient.jar
+C\:/Users/Binh\ Pham/week5/MyEJBExample/build/classes = MyEJBExample.jar

@@ -1,0 +1,18 @@
+package net.mv.receiptService;
+
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class ReceiptService
+ */
+@Stateless(mappedName = "ourEJBReceipt")
+public class ReceiptService implements ReceiptServiceRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public ReceiptService() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

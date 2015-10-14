@@ -1,0 +1,8 @@
+package net.mv.receiptService;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface ReceiptServiceRemote {
+
+}

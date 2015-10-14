@@ -1,0 +1,9 @@
+package net.mv.receipt;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface ReceiptRemote {
+	
+	public ReceiptRemote getReceipt(int custId);
+}

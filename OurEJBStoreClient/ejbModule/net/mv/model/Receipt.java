@@ -1,0 +1,63 @@
+package net.mv.model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import net.mv.ejb.pojos.Item;
+import net.mv.pojos.Customer;
+
+@Entity
+public class Receipt implements Serializable {
+
+	@Id
+	private int r_id;
+	
+//	@ManyToOne
+	private Customer customer;
+	
+//	@OneToMany
+	private Set<Item> items;
+	
+	
+	public Receipt() {}
+
+	public Receipt(int r_id) {
+		super();
+		this.r_id = r_id;
+	}
+
+	public int getR_id() {
+		return r_id;
+	}
+
+	public void setR_id(int r_id) {
+		this.r_id = r_id;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Set<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(Set<Item> items) {
+		this.items = items;
+	}
+
+	@Override
+	public String toString() {
+		return "Receipt [r_id=" + r_id + ", customer=" + customer + ", items="
+				+ items + "]";
+	}
+
+	
+}

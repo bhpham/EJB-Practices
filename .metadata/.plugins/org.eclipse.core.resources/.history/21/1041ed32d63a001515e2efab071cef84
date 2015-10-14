@@ -1,0 +1,5 @@
+package net.mv.ejb.receipt;
+
+public class Receipt {
+
+}

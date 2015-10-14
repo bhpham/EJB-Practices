@@ -1,0 +1,18 @@
+package net.mv.ejb.ex2;
+
+import javax.ejb.Stateful;
+
+/**
+ * Session Bean implementation class StatefulHelloWorld
+ */
+@Stateful(mappedName = "myStatefulEJB")
+public class StatefulHelloWorld implements StatefulHelloWorldRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public StatefulHelloWorld() {
+        // TODO Auto-generated constructor stub
+    }
+
+}
